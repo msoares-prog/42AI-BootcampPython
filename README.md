@@ -1,4 +1,5 @@
 # 42AI - Bootcamp Python  
+![](https://img.shields.io/badge/Status-InProgress-critical)
 ![](https://img.shields.io/badge/Project-42AI-%23002D62)
 ![](https://img.shields.io/badge/Language-Python-yellow)
 ![](https://img.shields.io/badge/Bootcamp-42FR-blueviolet)
