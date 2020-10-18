@@ -207,9 +207,64 @@ ERROR
 You will have to make a function which encodes strings into Morse code. The input will accept all alphanumeric characters.
 
 ```
-
+> python sos.py "SOS"
+... --- ...
+> python sos.py
+> python sos.py "HELLO / WORLD"
+ERROR
+> python sos.py "96 BOULEVARD" "Bessiere"
+----. -.... / -... --- ..- .-.. . ...- .- .-. -.. / -... . ... ... .. . .-. .
 ```
 
 ## Exercise 09
 
+You will have to make a program that will be an interactive guessing game. It will ask the user to guess a number between 1 and 99. The program will tell the user if their input is too high or too low. The game ends when the user finds out the secret number or types exit. You will have to import the random module with the randint function to get a random number. You have to count the number of trials and print that number when the user wins.
+
+```
+> python guess.py
+This is an interactive guessing game!
+You have to enter a number between 1 and 99 to find out the secret number.
+Type 'exit' to end the game.
+Good luck!
+What's your guess between 1 and 99?
+>> 54
+Too high!
+What's your guess between 1 and 99?
+>> 34
+Too low!
+What's your guess between 1 and 99?
+>> 45
+Too high!
+What's your guess between 1 and 99?
+>> A
+That's not a number.
+What's your guess between 1 and 99?
+>> 43
+Congratulations, you've got it!
+You won in 5 attempts!
+```
+
 ## Exercise 10
+
+This is a bonus exercise! Yield operator!
+So let's create a function called ft_progress(lst).
+
+```
+> python loading.py
+ETA: 8.67s [ 23%][=====>                  ] 233/1000 | elapsed time 2.33s
+...
+2000
+
+listy = range(3333)
+ret = 0
+for elem in ft_progress(listy):
+    ret += elem
+    sleep(0.005)
+print()
+print(ret)
+
+> python loading.py
+ETA: 14.67s [  9%][=>                      ] 327/3333 | elapsed time 1.33s
+...
+5552778
+```
